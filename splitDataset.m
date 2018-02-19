@@ -43,6 +43,8 @@ targettest = cleveland(ntrain+1:end, end)';
 % we only want to distinguish disease from no disease
 targettrain = double(targettrain > 0);
 targettest = double(targettest > 0);
+% targettrain = targettrain / 4;
+% targettest = targettest / 4;
 
 
 end
